@@ -1,0 +1,18 @@
+{
+  "name": "serverless-crud-api-functions",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Four independent FunctionGraph handlers for the product CRUD API",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "node ../scripts/local-e2e/run_e2e.js"
+  },
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.744.0",
+    "@aws-sdk/lib-dynamodb": "^3.744.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "typescript": "^5.7.0"
+  }
+}
