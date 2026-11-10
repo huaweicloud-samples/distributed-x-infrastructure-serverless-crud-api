@@ -1,0 +1,18 @@
+# Copy to terraform.tfvars and fill in values before deploying.
+# terraform.tfvars is ignored by Git and must never be committed.
+
+region     = "cn-north-4"
+app_name   = "serverless-crud-api"
+project_id = "<your-project-id>"
+
+# Instance administrator password used by the table data plane (user: rwuser).
+geminidb_password = "<your-instance-password>"
+
+# true  = dedicated gateway with a public entry (four published APIs)
+# false = lightweight verification profile, invoke the four functions directly
+enable_public_api = true
+
+# product_table_name  = "Products"
+# lts_ttl_in_days     = 7
+# function_memory_size = 256
+# function_timeout     = 30
